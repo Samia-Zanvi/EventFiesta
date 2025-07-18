@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div class="container">
+
+        <!-- link pages -->
+        <!-- nav starts  -->
+        <div class="navbar">
+            <img src="../images/logo.jpeg" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="venue.html">Decor</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="Pricing.html">Pricing</a></li>
+                    <li><a href="Register.html">Registration</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="Review.html">Review</a></li>
+    
+                </ul>
+            </nav>
+        </div>
+        </div>
+        <!-- nav div ends  -->
+        <section class="contact">
+            <div class="content">
+<h2>Contact Us</h2><br>
+<p>Fill the form for suggestion or review.Our team will contact with you soon.</p><br>
+
+            </div>
+    <div class="contactlist">
+        <div class="contactinfo">
+            <div class="box">
+                <div class="text">
+                    <h3>Address</h3>
+                    <p>343, Kapasgola Road,<br> Chawkbazar,<br>Chittagong</p>
+                </div><br>
+
+            </div>
+            <div class="box">
+                <div class="text">
+                    <h3>Phone</h3>
+                    <p>+88 0171526426</p>
+                </div><br>
+
+            </div>
+            <div class="box">
+                <div class="text">
+                    <h3>Email</h3>
+                    <p>evestfiesta23@gmail.com</p>
+                </div>
+
+            </div>
+            </div><br>
+            <div class="contactform">
+                <form action="backcont.php" method="POST">
+                    <h2>Feedback Form</h2>
+                    <div class="input"> 
+
+                        <input type="text" name="name" required="required">
+                        <span>Name</span>
+
+                    </div><br>
+                    <div class="input"> 
+
+                        <input type="text" name="email" required="required">
+                        <span>Email</span>
+
+                    </div><br>
+                    <level>Gender:</level><br>
+                    &nbsp;&nbsp;&nbsp;
+                    <input type="radio"name="Gender" value="male">
+                    <span id="male">Male</span> 
+                     &nbsp;&nbsp;&nbsp; 
+                    <input type="radio"name="Gender" value="Female">
+                    <span id="female">Female</span>
+                    &nbsp;&nbsp;&nbsp;
+                    <input type="radio"name="Gender"value="Other"> 
+                    <span id="Other">Other</span> <br><br>
+        
+        
+                    <div class="input"> 
+  <textarea type="text" name="message" cols="20" rows="10" required="required"></textarea>                    
+                        <span>please share your review...</span>
+                    </div>
+
+                    <div class="input"> 
+                        <input type="submit" name="submit" value="Send" id="submit">
+                        <input type="reset" id="submit" value="Clear">
+
+                    </div>
+
+
+                </form>
+             
+            </div>
+        </div>
+        </section>
+
+        <footer>
+            all rigths reserved to EventFiesta
+        </footer>
+
+    
+</body>
+</html>

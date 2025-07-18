@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Arial Narrow';
+}
+body{
+    background:rgb(239, 231, 231);
+    margin: 0;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    padding-top: 3%;
+    padding-left: 2%;
+    padding-right: 6%;
+    padding-bottom: 2%;
+    box-sizing: border-box;
+    background:rgb(163, 143, 167);
+    
+}
+
+.navbar{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+.logo{
+    width: 60px;
+    cursor: pointer;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(12, 1, 7);
+    font-size: 16px;
+}
+nav ul li a:hover{
+    cursor: pointer;
+    color: rgb(251, 249, 250);
+    
+    }
+    footer{
+        padding: 10px;
+        font-size: 17px;
+        font-weight: bold;
+        text-align: center;
+        background: #586a5c;
+        color: antiquewhite;
+        font-family: Arial;
+        letter-spacing: 1px;
+    }
+input{
+    display: none;
+}
+.content{
+    width: 100%;
+text-align: center;
+}
+h1{
+    font-weight: normal;
+    font-size: 35px;
+    position: relative;
+    margin: 40px 0;
+
+}
+.top-content{
+background-color: rgb(132, 121, 132);
+width: 100%;
+margin: 0 auto 20px auto;
+height: 60px;
+display: flex;
+align-items: center;
+border-radius: 5px;
+box-shadow: 3px 3px 5px rgb(114, 5, 111);
+}
+h3{
+    height: 100%;
+    background-color: rgb(28, 26, 22);
+    line-height: 60px;
+    padding: 0 50px;
+    color: rgb(246, 246, 241);
+}
+label{
+    display: inline-block;
+    height: 100%;
+    margin: 0 20px;
+    line-height: 60px;
+    font-size: 18px;
+    color: rgb(251, 248, 245);
+    cursor: pointer;
+    transition: color .5s;
+
+}
+label:hover{
+    color: rgb(2, 0, 17);
+}
+.photo-gallery{
+    width: 100%;
+    margin: 5px;
+    padding: 2%;
+    display:grid ;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+
+}
+.pic {
+    position: relative;
+    height: 230px;
+    box-shadow: 3px 3px 5px rgb(199, 186, 186);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: .5s;
+}
+.pic::before{
+    content: "Glimpse of our decors";
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: rgb(48, 73, 98);
+    font-size: 22px;
+    font-weight: bold;
+    width: 100%;
+    margin-top: -100px;
+    opacity: 0;
+    transition: .3s;
+    transition-delay: .2s;
+}
+
+ .pic::after{ 
+    content: "";
+    position: absolute;
+    background-color: rgb(0,0,0,.4);
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+    height: 0;
+    transition: .3s;
+} 
+.pic:hover:after{
+    height: 100%;
+}
+.pic:hover:before
+{
+margin-top: 0;
+opacity: 1;
+}
+#check1:checked~ .content .photo-gallery .pic
+{
+opacity: 1;
+transform: scale(1);
+position: relative;
+transition: .5s;
+}
+#check2:checked~.content .photo-gallery .venue
+{
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+    transition: .5s;
+
+    
+}
+#check2:checked~.content .photo-gallery .catering
+
+{
+    opacity: 0;
+    transform: scale(0);
+    position:absolute;
+    transition: .5s;
+
+}
+#check3:checked~.content .photo-gallery .catering
+{
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+    transition: .5s;
+
+    
+}
+#check3:checked~.content .photo-gallery .venue
+{
+    opacity: 0;
+    transform: scale(0);
+    position:absolute;
+    transition: .5s;
+
+}
+

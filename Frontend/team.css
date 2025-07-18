@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+text-decoration: none;
+}
+body{
+    background:rgb(144, 173, 184);
+    margin: 0;
+
+}
+.container {
+    width: 100%;
+    height: auto; /* Allow the container to grow based on content */
+    padding: 3% 6% 2% 2%;
+    box-sizing: border-box;
+    background: #98b7c2;
+  }
+.navbar{
+    height: 10%;
+    display: flex;
+    align-items: center;
+    
+}
+.logo{
+    width: 60px;
+    cursor: pointer;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(16, 1, 5);
+    font-size: 16px;
+}
+nav ul li a:hover{
+    cursor: pointer;
+    color: rgb(251, 249, 250);
+    
+    }
+    .team{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(#aa8bde,#0f051d);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .teamcontent {
+        width: 100%;
+        max-width: 1200px; /* Adjust the max width to fit larger screens */
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust minmax to fit the image */
+        align-items: center;
+        gap: 2rem;
+        text-align: center;
+        margin-top: 4rem;
+    }
+    .teamcontent img {
+        max-width: 100%; /* Ensures the image doesn't overflow the container */
+        height: auto;
+        object-fit: cover; /* Makes sure the image fits without distortion */
+        border-radius: 15px;
+        margin-bottom: 15px;
+      }        .center h1{
+        color: aliceblue;
+        font-size: 4rem;
+        text-align: center;
+        font-family: 'Monofett', monospace;
+
+    }
+    .center p{
+        align-content: center;
+        color: rgb(251, 250, 248);
+        font-family: cursive;
+        margin: 10px;
+padding: 30px;  
+  }
+.box{
+padding: 16px;
+background: #a48da7;
+border-radius: 15px;
+transition: all 0.38s ease;
+margin-bottom: 20px;
+}
+.box h3{
+     font-size: 23px;
+     font-weight: 600;
+     color: rgb(0, 0, 0);
+     margin-bottom: 8px;
+}
+.box h5{
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(17, 49, 76);
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+icons i{
+  display: inline-block;
+  color: aliceblue;
+  font-size: 20px;
+  margin: 0 8px;
+  transition: all 0.38s ease;
+}
+icons i:hover{
+    transform:scale(1.2) ;
+}
+.box:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+footer{
+    padding: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    background: #98b7c2;
+    color: rgb(25, 14, 1);
+    font-family: Arial;
+    letter-spacing: 1px;
+}
+
+
+

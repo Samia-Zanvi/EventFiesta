@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="regstyle.css">
+
+</head>
+<body>
+    <div class="container">
+
+    <!-- link pages -->
+    <!-- nav starts  -->
+    <div class="navbar">
+        <img src="../images/logo.jpeg" class="logo">
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="venue.html">Venue</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="Pricing.html">Pricing</a></li>
+                <li><a href="Register.html">Registration</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="Review.html">Review</a></li>
+            </ul>
+        </nav>
+    </div>
+    </div>
+    <!-- nav div ends  -->
+
+    <div class="main">
+    
+    <div class="reg">
+    <form id="Register" action="indexback.php" method="POST">         
+                  <h1>Registration  Here</h1>
+        
+          
+            <level>Fullname:</level> <br>
+            <input type="text"name="name"id="name" placeholder="Enter your name" required><br><br>
+            <! readonly keyword can only read>
+          
+            <level>E-mail:</level>
+            <br>
+            <input type="email"name="Email"id="name" placeholder="Enter your email" required><br><br>
+
+          
+            <level>Date of Birth:</level>
+            <br>
+            <input type="date"name="dob"id="name"placeholder="Enter your dob"><br><br>
+
+
+            <level>phone:</level>            <br>
+            <input type="tel"name="phone"id="name" placeholder="Enter your phone number"><br><br>
+
+            <level>Gender:</level><br>
+            &nbsp;&nbsp;&nbsp;
+            <input type="radio"name="Gender" value="male">
+            <span id="male">Male</span> 
+             &nbsp;&nbsp;&nbsp; 
+            <input type="radio"name="Gender" value="Female">
+            <span id="female">Female</span>
+            &nbsp;&nbsp;&nbsp;
+            <input type="radio"name="Gender"value="transgender"> 
+            <span id="trans">Transgender</span> <br><br>
+            
+            <level>Religion:</level><br>
+            &nbsp;&nbsp;&nbsp;
+            <input type="checkbox"name="Religion"value="Islam"checked> 
+            <span id="islam">Islam</span> 
+            
+            &nbsp;&nbsp;&nbsp;
+            <input type="checkbox"name="Religion" value="Hindu"> 
+            <span id="islam">Hindu</span> 
+            
+            &nbsp;&nbsp;&nbsp;
+            <input type="checkbox"name="Religion"value="Buddisth">
+            <span id="Buddisth">Buddisth</span> <br>
+            &nbsp;&nbsp;&nbsp;
+            <input type="checkbox"name="Religion"id= "Religion"value="christian">
+            <span id="christian">Christian</span>
+            &nbsp;&nbsp;&nbsp;
+            <input type="checkbox"name="Religion"value="others"> 
+            <span id="others">Others</span> <br><br>
+
+            <level>Packages:</level><br>
+            <!-- &nbsp;&nbsp;&nbsp; -->
+            <input type="radio" value="Birthday" name="packages" id="birthdayPackage">
+            <span id="Birthday">Birthday</span> 
+            &nbsp; 
+            <input type="radio" value="Wedding" name="packages" id="weddingPackage">
+            <span id="Wedding">Wedding</span>
+            &nbsp;
+            <input type="radio" value="Comcert" name="packages" id="concertPackage">
+            <span id="concert">Concert</span>
+            &nbsp;&nbsp;&nbsp;<br>
+
+            <input type="radio" value="Theme party" name="packages" id="themePackage">
+            <span id="theme">Theme party</span>
+            &nbsp;&nbsp;&nbsp;
+            <input type="radio" value="Home party" name="packages" id="HomepartyPackage">
+            <span id="Home party">Home party</span>
+            &nbsp;&nbsp;&nbsp;<br>
+
+            <input type="radio" value="Baby Shower" name="packages" id="babyShowerPackage">
+            <span id="Baby Shower">Baby Shower</span> 
+            &nbsp;&nbsp;&nbsp; 
+            <input type="radio" value="Rooftop" name="packages" id="rooftopPackage">
+            <span id="Rooftop">Rooftop</span>
+            &nbsp;&nbsp;&nbsp;<br>
+            
+            <input type="radio" value="others" name="packages" id="othersPackage"> 
+            <span id="others">Others</span>
+            <br><br>
+            
+        <input type="submit" value="Register" id="submit">
+        <! disable keyword can disable the button>
+        <input type="reset" id="submit" value="Clear">
+        
+        
+            </div>
+    </form>
+    </div>
+    </div>
+    <footer>
+        all rigths reserved to EventFiesta
+    </footer>
+
+</body>
+</html>
